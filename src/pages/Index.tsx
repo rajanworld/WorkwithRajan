@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Features from "@/components/Features";
+import Profile from "@/components/Profile";
 import MobilePreview from "@/components/MobilePreview";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
@@ -11,6 +12,7 @@ const Index = () => {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <Profile />
       <Stats />
       <Features />
       <MobilePreview />
