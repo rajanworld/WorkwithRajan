@@ -1,43 +1,55 @@
 import { Link } from "react-router-dom";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-4 border-t border-mint/10">
-      <div className="container mx-auto">
-        <div className="grid md:grid-cols-4 gap-12">
+    <footer className="bg-forest-light border-t border-mint/10">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">ByteHire</h3>
-            <p className="text-white/60 max-w-xs">
-              Revolutionizing tech recruitment with AI-powered matching and seamless hiring processes.
+            <h3 className="text-2xl font-bold text-mint">Rajan</h3>
+            <p className="text-white/60">
+              Full Stack Developer specializing in React, Node.js, and modern web technologies.
             </p>
           </div>
-          <div>
-            <h4 className="font-medium mb-4">Product</h4>
+          
+          <div className="space-y-4">
+            <h4 className="font-semibold text-white">Services</h4>
             <ul className="space-y-2">
-              <li><Link to="/features" className="text-white/60 hover:text-mint transition-colors">Features</Link></li>
-              <li><Link to="/pricing" className="text-white/60 hover:text-mint transition-colors">Pricing</Link></li>
-              <li><Link to="/enterprise" className="text-white/60 hover:text-mint transition-colors">Enterprise</Link></li>
+              <li><Link to="/services/web-development" className="text-white/60 hover:text-mint">Web Development</Link></li>
+              <li><Link to="/services/mobile-apps" className="text-white/60 hover:text-mint">Mobile Apps</Link></li>
+              <li><Link to="/services/ecommerce" className="text-white/60 hover:text-mint">E-commerce Solutions</Link></li>
+              <li><Link to="/services/consulting" className="text-white/60 hover:text-mint">Technical Consulting</Link></li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-medium mb-4">Company</h4>
+          
+          <div className="space-y-4">
+            <h4 className="font-semibold text-white">Company</h4>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-white/60 hover:text-mint transition-colors">About Us</Link></li>
-              <li><Link to="/careers" className="text-white/60 hover:text-mint transition-colors">Careers</Link></li>
-              <li><Link to="/blog" className="text-white/60 hover:text-mint transition-colors">Blog</Link></li>
+              <li><Link to="/about" className="text-white/60 hover:text-mint">About</Link></li>
+              <li><Link to="/portfolio" className="text-white/60 hover:text-mint">Portfolio</Link></li>
+              <li><Link to="/testimonials" className="text-white/60 hover:text-mint">Testimonials</Link></li>
+              <li><Link to="/contact" className="text-white/60 hover:text-mint">Contact</Link></li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-medium mb-4">Legal</h4>
-            <ul className="space-y-2">
-              <li><Link to="/privacy" className="text-white/60 hover:text-mint transition-colors">Privacy</Link></li>
-              <li><Link to="/terms" className="text-white/60 hover:text-mint transition-colors">Terms</Link></li>
-              <li><Link to="/security" className="text-white/60 hover:text-mint transition-colors">Security</Link></li>
-            </ul>
+          
+          <div className="space-y-4">
+            <h4 className="font-semibold text-white">Connect</h4>
+            <div className="flex space-x-4">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-mint">
+                <Github className="w-6 h-6" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-mint">
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a href="mailto:contact@example.com" className="text-white/60 hover:text-mint">
+                <Mail className="w-6 h-6" />
+              </a>
+            </div>
+            <p className="text-white/60">
+              © 2024 Rajan. All rights reserved.
+            </p>
           </div>
-        </div>
-        <div className="border-t border-mint/10 mt-16 pt-8 text-center text-white/60">
-          <p>&copy; {new Date().getFullYear()} ByteHire. All rights reserved.</p>
         </div>
       </div>
     </footer>
