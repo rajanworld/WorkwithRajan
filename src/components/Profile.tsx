@@ -1,8 +1,20 @@
+import React, { useState, useEffect } from 'react';
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, MapPin, Star, Award, Languages, Briefcase, GraduationCap, Code } from "lucide-react";
 
 const Profile = () => {
+  const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="py-20 px-4 bg-forest">
       <div className="container mx-auto">
@@ -16,7 +28,7 @@ const Profile = () => {
                   <MapPin className="w-4 h-4" />
                   <span>Chandigarh, India</span>
                   <Clock className="w-4 h-4 ml-2" />
-                  <span>12:02 pm local time</span>
+                  <span>{currentTime} local time</span>
                 </div>
               </div>
             </div>
