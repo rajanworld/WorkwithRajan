@@ -40,10 +40,15 @@ const Index = () => {
             <div className="relative bg-forest-light p-8 rounded-2xl shadow-2xl border border-mint/10">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-mint/10 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-mint">RA</span>
+                  <span className="text-2xl font-bold text-mint"> <img
+  src="/rajan.webp"
+  className="rounded-full border-4 border-mint/10 object-cover transition-transform duration-300 hover:scale-110"
+  alt="Rajan Full Stack Developer"
+/>
+</span>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-white">Raj A.</h2>
+                  <h2 className="text-2xl font-bold text-white">Rajan</h2>
                   <p className="text-mint">Chandigarh, India</p>
                 </div>
               </div>
@@ -53,10 +58,10 @@ const Index = () => {
                     Available now
                   </Badge>
                   <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
-                    93% Job Success
+                    100% Job Success
                   </Badge>
                   <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
-                    Top Rated
+                    Top Rated Plus
                   </Badge>
                 </div>
                 <div className="flex items-center gap-2">

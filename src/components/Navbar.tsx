@@ -9,18 +9,18 @@ const Navbar = () => {
           Rajan
         </Link>
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/services" className="text-white/90 hover:text-white transition-colors">
+          {/* <Link to="#services" className="text-white/90 hover:text-white transition-colors">
             Services
           </Link>
-          <Link to="/portfolio" className="text-white/90 hover:text-white transition-colors">
+          <Link to="#portfolio" className="text-white/90 hover:text-white transition-colors">
             Portfolio
           </Link>
-          <Link to="/about" className="text-white/90 hover:text-white transition-colors">
+          <Link to="#about" className="text-white/90 hover:text-white transition-colors">
             About
           </Link>
-          <Link to="/contact" className="text-white/90 hover:text-white transition-colors">
+          <Link to="#contact" className="text-white/90 hover:text-white transition-colors">
             Contact
-          </Link>
+          </Link> */}
         </div>
         <Button className="bg-mint hover:bg-mint/90 text-forest font-medium">
           Hire Me

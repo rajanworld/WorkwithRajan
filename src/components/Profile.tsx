@@ -26,7 +26,7 @@ const Profile = () => {
                 Available now
               </Badge>
               <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
-                93% Job Success
+                100% Job Success
               </Badge>
               <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
                 Top Rated
