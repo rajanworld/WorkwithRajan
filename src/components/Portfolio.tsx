@@ -3,11 +3,17 @@ import { Badge } from "@/components/ui/badge";
 import { Code, Globe, Video, Users, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Portfolio: React.FC = () => {
+interface PortfolioProps {
+
+    id?: string;
+  
+  }
+  
+  const Portfolio = ({ id }: PortfolioProps) => {
     const technologies = ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "WebRTC", "TypeScript", "Tailwind CSS"];
 
     return (
-        <section className="py-20 px-4 bg-forest">
+        <section id={id} className="py-20 px-4 bg-forest">
             <div className="container mx-auto">
                 <div className="space-y-8">
                     {/* Project Header */}

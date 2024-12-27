@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from "@/components/Navbar";
 import Stats from "@/components/Stats";
 import Profile from "@/components/Profile";
@@ -9,6 +10,10 @@ import { ArrowRight, Code, Briefcase, Users, Star, GraduationCap, Languages } fr
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
+  const handlePortfolioClick = () => {
+    document.getElementById("portfolio-section").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -28,10 +33,17 @@ const Index = () => {
               11+ years of experience in crafting high-performance web applications. MERN Stack expert with $100K+ earnings.
             </p>
             <div className="flex items-center gap-4">
-              <Button className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg">
-                Hire Me <ArrowRight className="ml-2 h-5 w-5" />
+              <Button 
+                className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg"
+                onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")}
+              >
+                Book your call now <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-mint/20 text-mint hover:bg-mint/10">
+              <Button 
+                variant="outline" 
+                className="border-mint/20 text-mint hover:bg-mint/10"
+                onClick={handlePortfolioClick}
+              >
                 View Portfolio
               </Button>
             </div>
@@ -134,7 +146,8 @@ const Index = () => {
       {/* Testimonials */}
       <Testimonials />
 
-      <Portfolio />
+      {/* Portfolio Section */}
+      <Portfolio id="portfolio-section" />
 
       {/* CTA Section */}
       <section className="py-20 px-4">
