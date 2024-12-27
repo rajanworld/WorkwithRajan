@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Stats from "@/components/Stats";
 import Profile from "@/components/Profile";
 import Testimonials from "@/components/Testimonials";
+import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Briefcase, Users, Star, GraduationCap, Languages } from "lucide-react";
@@ -132,6 +133,8 @@ const Index = () => {
 
       {/* Testimonials */}
       <Testimonials />
+
+      <Portfolio />
 
       {/* CTA Section */}
       <section className="py-20 px-4">
