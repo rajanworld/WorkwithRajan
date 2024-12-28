@@ -33,7 +33,7 @@ export const projects: Project[] = [
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "WebRTC", "TypeScript", "Tailwind CSS"],
     technicalDetails: "Built using the MERN stack, the platform ensures a seamless and responsive user experience. Socket.io integration enables real-time chat functionality, while WebRTC technology powers high-quality live streaming capabilities.",
     testimonial: "Raj is one of the best developers I’ve had the pleasure of working with on Upwork. He is detail-oriented, highly responsible, and consistently goes above and beyond to deliver exceptional results. If you have a project in mind, Raj and his team can bring it to life with meticulous planning and remarkable efficiency, even under tight deadlines. I highly recommend him for any development needs!"
-  },
+  }, 
   {
     title: "Bouboulena Video Production",
     description: "A sophisticated video management platform with drag-and-drop capabilities, allowing seamless content management and display.",
