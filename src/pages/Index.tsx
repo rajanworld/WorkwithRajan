@@ -30,7 +30,7 @@ const Index = () => {
               Let’s Build Your Vision Together
             </h1>
             <p className="text-lg text-white/80 max-w-md">
-              Partner with an expert full-stack developer. With 11+ years of experience and 125+ successful projects, I bring your ideas to life using React, PHP, and the MERN stack.
+            You have the idea, and I have the skills to make it happen. With 10+ years of experience and a strong track record, I create websites, apps, and custom solutions that work for your business. Let’s discuss and turn your vision into reality!
             </p>
             <div className="flex items-center gap-4">
               <Button  
