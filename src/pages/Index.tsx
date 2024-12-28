@@ -33,7 +33,7 @@ const Index = () => {
               Partner with an expert full-stack developer. With 11+ years of experience and 125+ successful projects, I bring your ideas to life using React, PHP, and the MERN stack.
             </p>
             <div className="flex items-center gap-4">
-              <Button 
+              <Button  
                 className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg"
                 onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")}
               >
