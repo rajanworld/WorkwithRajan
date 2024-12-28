@@ -22,7 +22,7 @@ const Navbar = () => {
             Contact
           </Link> */}
         </div>
-        <Button className="bg-mint hover:bg-mint/90 text-forest font-medium">
+        <Button onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} className="bg-mint hover:bg-mint/90 text-forest font-medium">
           Hire Me
         </Button>
       </div>
