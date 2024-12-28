@@ -24,7 +24,7 @@ const Index = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-2 bg-mint/10 w-fit px-4 py-2 rounded-full border border-mint/20">
               <Star className="w-4 h-4 text-mint" />
-              <span className="text-mint text-sm font-medium">Top Rated Developer</span>
+              <span className="text-mint text-sm font-medium">Top Rated Developer in Upwork</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white">
               Certified React & PHP Developer
