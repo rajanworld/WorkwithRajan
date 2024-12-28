@@ -157,7 +157,7 @@ const Index = () => {
             Let's work together to bring your vision to life with cutting-edge technology and professional expertise.
             As a top-rated Upwork freelancer, I deliver exceptional development skills and digital marketing expertise.
           </p>
-          <Button className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg">
+          <Button onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg">
             Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

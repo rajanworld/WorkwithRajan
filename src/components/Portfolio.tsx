@@ -29,7 +29,7 @@ interface PortfolioProps {
                                 </Badge>
                             </div>
                         </div>
-                        <Button className="bg-mint hover:bg-mint/90 text-forest font-medium">
+                        <Button onClick={() => window.open("https://avatarwalk.com", "_blank")} className="bg-mint hover:bg-mint/90 text-forest font-medium">
                             View Project
                         </Button>
                     </div>

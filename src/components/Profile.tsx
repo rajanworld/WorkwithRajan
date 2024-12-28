@@ -52,11 +52,11 @@ const Profile = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Briefcase className="w-5 h-5 text-mint" />
-                <span className="text-white">124 Total jobs</span>
+                <span className="text-white">125 Total jobs</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-mint" />
-                <span className="text-white">2,124 Total hours</span>
+                <span className="text-white">2000+ Total hours</span>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Profile = () => {
               <p className="text-white/80">
                 Hi, I'm Rajan, a certified React Developer with 11+ years of experience in crafting high-performance web applications. My expertise includes MERN Stack (MongoDB, Express, React, Node.js), Next.js and TypeScript for scalable and maintainable apps.
               </p>
-              <Button className="w-full bg-mint hover:bg-mint/90 text-forest font-medium">
+              <Button onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} className="w-full bg-mint hover:bg-mint/90 text-forest font-medium">
                 Contact Me
               </Button>
             </div>
