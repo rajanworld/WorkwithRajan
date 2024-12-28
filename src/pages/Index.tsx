@@ -37,7 +37,7 @@ const Index = () => {
                 className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg"
                 onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")}
               >
-                Let's Make It Happen <ArrowRight className="ml-2 h-5 w-5" />
+                Schedule a Meeting <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
                 variant="outline" 
