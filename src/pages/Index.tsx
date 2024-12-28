@@ -24,27 +24,27 @@ const Index = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-2 bg-mint/10 w-fit px-4 py-2 rounded-full border border-mint/20">
               <Star className="w-4 h-4 text-mint" />
-              <span className="text-mint text-sm font-medium">Top Rated Developer in Upwork</span>
+              <span className="text-mint text-sm font-medium">Top Rated Developer on Upwork</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white">
-              Certified React & PHP Developer
+              Let’s Build Your Vision Together
             </h1>
             <p className="text-lg text-white/80 max-w-md">
-              11+ years of experience in crafting high-performance web applications. MERN Stack expert with $100K+ earnings.
+              Partner with an expert full-stack developer. With 11+ years of experience and 125+ successful projects, I bring your ideas to life using React, PHP, and the MERN stack.
             </p>
             <div className="flex items-center gap-4">
               <Button 
                 className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg"
                 onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")}
               >
-                Book your call now <ArrowRight className="ml-2 h-5 w-5" />
+                Let's Make It Happen <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
                 variant="outline" 
                 className="border-mint/20 text-mint hover:bg-mint/10"
                 onClick={handlePortfolioClick}
               >
-                View Portfolio
+                Explore My Portfolio
               </Button>
             </div>
           </div>
@@ -53,12 +53,13 @@ const Index = () => {
             <div className="relative bg-forest-light p-8 rounded-2xl shadow-2xl border border-mint/10">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-mint/10 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-mint"> <img
-  src="/rajan.webp"
-  className="rounded-full border-4 border-mint/10 object-cover transition-transform duration-300 hover:scale-110"
-  alt="Rajan Full Stack Developer"
-/>
-</span>
+                  <span className="text-2xl font-bold text-mint">
+                    <img
+                      src="/rajan.webp"
+                      className="rounded-full border-4 border-mint/10 object-cover transition-transform duration-300 hover:scale-110"
+                      alt="Rajan Full Stack Developer"
+                    />
+                  </span>
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-white">Rajan</h2>
@@ -68,7 +69,7 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
-                    Available now
+                    Available Now
                   </Badge>
                   <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
                     100% Job Success
@@ -91,6 +92,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+
 
       {/* Skills Section */}
       <section className="py-20 px-4 bg-forest-light">
