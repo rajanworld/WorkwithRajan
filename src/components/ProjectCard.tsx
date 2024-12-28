@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <Card className="bg-[#2a2a2a] border-none p-8">
+    <Card className="bg-forest-light border-none p-8">
       <div className="space-y-8">
         {/* Project Header */}
         <div className="flex justify-between items-start flex-wrap gap-4">

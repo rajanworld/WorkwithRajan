@@ -39,7 +39,7 @@ const Testimonials = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Client Testimonials</h2>
-          <p className="text-white/80">Trusted by leading companies worldwide</p>
+          <p className="text-white/80">Trusted by 125+ clients worldwide</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
