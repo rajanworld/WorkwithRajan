@@ -18,6 +18,10 @@ const Profile = () => {
   return (
     <section className="py-20 px-4 bg-forest">
       <div className="container mx-auto">
+         {/* title */}
+         <h2 className="text-4xl font-bold text-center mb-16">
+            About Me
+          </h2>
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Left Column - Basic Info */}
           <div className="space-y-6">

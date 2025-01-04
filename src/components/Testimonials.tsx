@@ -4,33 +4,39 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote: "This freelancer is 5 stars all the way, I will highly recommend to anyone, and can't wait to work with them again!",
-      author: "Client",
-      role: "Tech Company CEO"
+      author: "John Doe",
+      role: "Tech Company CEO",
+      industry: "Technology"
     },
     {
       quote: "Raj was very quick to respond to my invite, communicated well and did a great job. He also took on board my feedback well and made the adjustments I needed - and all within the specified timeframe.",
-      author: "Project Manager",
-      role: "Software Company"
+      author: "Alex M.",
+      role: "Software Company",
+      industry: "Software"
     },
     {
       quote: "Raja has been the most responsible and skillful developer I've ever meet. Complete my project in time and find ways to solve extra problems in limited time.",
-      author: "Tech Lead",
-      role: "Enterprise Client"
+      author: "Michael Brown",
+      role: "Enterprise Client",
+      industry: "Enterprise"
     },
     {
       quote: "Raj is a SuperStar at Shopify. Hire him!",
-      author: "E-commerce Client",
-      role: "Shopify Store Owner"
+      author: "Dan K.",
+      role: "Shopify Store Owner",
+      industry: "E-commerce"
     },
     {
       quote: "Blown away with my experience with Raj. I couldn't find a dev to figure this project out and Raj did it quicker and better than I could have ever imagined.",
-      author: "Startup Founder",
-      role: "Technology Company"
+      author: "Kyle Exline",
+      role: "Technology Company",
+      industry: "Startup"
     },
     {
       quote: "RAJ AN consistently delivers A++++ work! He is very humble about his extensive knowledge and is always a pleasure to work with!",
-      author: "Long-term Client",
-      role: "Digital Agency"
+      author: "Kofi Adu",
+      role: "Digital Agency",
+      industry: "Digital Marketing"
     }
   ];
 
@@ -54,6 +60,7 @@ const Testimonials = () => {
               <div className="mt-auto">
                 <p className="font-medium text-mint">{testimonial.author}</p>
                 <p className="text-white/60 text-sm">{testimonial.role}</p>
+                {/* <p className="text-white/60 text-sm italic">{testimonial.industry}</p> */}
               </div>
             </div>
           ))}
