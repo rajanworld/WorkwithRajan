@@ -30,7 +30,7 @@ const Index = () => {
               Custom web solutions designed to grow your business
             </h1>
             <p className="text-base sm:text-lg text-white/80 max-w-md">
-              You have the idea, and I have the skills to make it happen. With 10+ years of experience and a strong track record, I create websites, apps, and custom solutions that work for your business. Let’s discuss and turn your vision into reality!
+              You have the idea, and I have the skills to make it happen. With 11+ years of experience and a strong track record, I create websites, apps, and custom solutions that work for your business. Let’s discuss and turn your vision into reality!
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <Button  
