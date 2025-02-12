@@ -70,7 +70,14 @@ const Profile = () => {
             <div className="space-y-4">
               <h2 className="text-xl font-semibold text-white">Skills</h2>
               <div className="flex flex-wrap gap-2">
-                {["React", "WordPress", "Next.js", "Node.js", "ExpressJS", "MongoDB", "PHP", "TypeScript", "Tailwind CSS"].map((skill) => (
+                {[
+                  // AI Skills
+                  "OpenAI", "LangChain", "ChatGPT API", "Machine Learning", "NLP", "Process Automation",
+                  // Full Stack Skills
+                  "React", "Node.js", "TypeScript", "Next.js", "Python", "PHP",
+                  "MongoDB", "PostgreSQL", "Redux", "REST APIs", "GraphQL",
+                  "AWS", "Docker", "CI/CD", "Agile", "Git"
+                ].map((skill) => (
                   <Badge key={skill} variant="secondary" className="bg-mint/10 text-mint border-mint/20">
                     {skill}
                   </Badge>
@@ -104,11 +111,11 @@ const Profile = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <h2 className="text-xl font-semibold text-white">Certified React & PHP Developer</h2>
+                <h2 className="text-xl font-semibold text-white">Full Stack Developer & AI Specialist</h2>
                 <span className="text-mint font-semibold">$60.00/hr</span>
               </div>
               <p className="text-white/80">
-                Hi, I'm Rajan, a certified React Developer with 11+ years of experience in crafting high-performance web applications. My expertise includes MERN Stack (MongoDB, Express, React, Node.js), Next.js and TypeScript for scalable and maintainable apps.
+                Hi, I'm Rajan, a Full Stack Developer and AI Automation Specialist. I combine expertise in building robust web applications with cutting-edge AI solutions using OpenAI, LangChain, and custom ML models. From traditional web development to intelligent automation, I help businesses create efficient and innovative solutions.
               </p>
               <Button onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} className="w-full bg-mint hover:bg-mint/90 text-forest font-medium">
                 Contact Me
@@ -118,6 +125,13 @@ const Profile = () => {
             <div className="space-y-4 border-t border-mint/10 pt-4">
               <h2 className="text-xl font-semibold text-white">Certifications</h2>
               <div className="space-y-4">
+                <div className="flex items-start gap-2">
+                  <Code className="w-5 h-5 text-mint" />
+                  <div>
+                    <p className="text-white">Google AI Certification</p>
+                    <p className="text-white/60">Issued: 2024</p>
+                  </div>
+                </div>
                 <div className="flex items-start gap-2">
                   <Code className="w-5 h-5 text-mint" />
                   <div>

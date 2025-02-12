@@ -8,14 +8,16 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Briefcase, Users, Star, GraduationCap, Languages } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import ContactForm from "@/components/ContactForm";
+import { AIIcon, ChatbotIcon, IntegrationIcon } from "@/components/icons";
 
 const Index = () => {
   const handlePortfolioClick = () => {
-    document.getElementById("portfolio-section").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("portfolio-section")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
@@ -24,13 +26,13 @@ const Index = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-2 bg-mint/10 w-fit px-4 py-2 rounded-full border border-mint/20">
               <Star className="w-4 h-4 text-mint" />
-              <span className="text-mint text-sm font-medium">Top Rated Developer on Upwork</span>
+              <span className="text-mint text-sm font-medium">Expert AI Automation Specialist</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white" role="heading">
-              Custom web solutions designed to grow your business
+              Transform your business with intelligent AI automation
             </h1>
             <p className="text-base sm:text-lg text-white/80 max-w-md">
-              You have the idea, and I have the skills to make it happen. With 11+ years of experience and a strong track record, I create websites, apps, and custom solutions that work for your business. Let’s discuss and turn your vision into reality!
+              Revolutionize your workflow with custom AI solutions. From chatbots to process automation, I help businesses leverage AI technology to reduce costs, increase efficiency, and drive growth.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <Button  
@@ -66,7 +68,7 @@ const Index = () => {
                   <p className="text-mint">Chandigarh, India</p>
                 </div>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 mb-6">
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
                     Available Now
@@ -74,21 +76,10 @@ const Index = () => {
                   <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
                     100% Job Success
                   </Badge>
-                  <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">
-                    Top Rated Plus
-                  </Badge>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Languages className="w-4 h-4 text-mint" />
-                  <span className="text-white/80">English, Hindi, Punjabi (Native)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <GraduationCap className="w-4 h-4 text-mint" />
-                  <span className="text-white/80">Computer Science, GGS College</span>
-                </div>
-                <p className="text-xl sm:text-2xl font-bold text-mint">$30.00 - $60.00/hr</p>
-                <p className="text-white/80">With a proven track record of delivering $200k+ projects on time and within budget.</p>
+                <p className="text-white/80">Let me help automate your repetitive tasks and streamline your workflow.</p>
               </div>
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -98,53 +89,54 @@ const Index = () => {
       {/* Skills Section */}
       <section className="py-20 px-4 bg-forest-light">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">My Professional Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">AI Solutions & Expertise</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Full Stack Development */}
+            {/* AI Automation */}
             <div className="p-8 rounded-xl border border-mint/10 bg-forest hover:border-mint/30 transition-colors">
-              <img src="/icons/fullstack-icon.svg" alt="Full Stack Icon" className="w-12 h-12 mb-6" />
-              <h3 className="text-xl font-bold mb-4">Full Stack Development</h3>
+              <div className="mb-6">
+                <AIIcon />
+              </div>
+              <h3 className="text-xl font-bold mb-4">AI Automation Solutions</h3>
               <p className="text-white/60 mb-4">
-                I build comprehensive web applications ensuring seamless integration and superior user experience.
+                Custom AI solutions for process automation, data analysis, and intelligent decision-making systems.
               </p>
               <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">OpenAI</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">LangChain</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">ChatGPT API</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Machine Learning</Badge>
+              </div>
+            </div>
+            {/* Chatbots & NLP */}
+            <div className="p-8 rounded-xl border border-mint/10 bg-forest hover:border-mint/30 transition-colors">
+              <div className="mb-6">
+                <ChatbotIcon />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Intelligent Chatbots & NLP</h3>
+              <p className="text-white/60 mb-4">
+                Advanced conversational AI solutions and natural language processing applications.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">NLP</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Rasa</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Dialogflow</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Custom Chatbots</Badge>
+              </div>
+            </div>
+            {/* Full Stack AI Integration */}
+            <div className="p-8 rounded-xl border border-mint/10 bg-forest hover:border-mint/30 transition-colors">
+              <div className="mb-6">
+                <IntegrationIcon />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Full Stack AI Integration</h3>
+              <p className="text-white/60 mb-4">
+                Seamless integration of AI capabilities into existing web and mobile applications.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Python</Badge>
+                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">TensorFlow</Badge>
                 <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">React</Badge>
                 <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Node.js</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">MongoDB</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Express</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Next.js</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">TypeScript</Badge>
-              </div>
-              {/* <p className="text-white/60 mt-4">Certifications: AWS Certified Developer, Microsoft Certified: Azure Developer Associate</p> */}
-            </div>
-            {/* Backend Development */}
-            <div className="p-8 rounded-xl border border-mint/10 bg-forest hover:border-mint/30 transition-colors">
-              <img src="/icons/backend-icon.svg" alt="Backend Icon" className="w-12 h-12 mb-6" />
-              <h3 className="text-xl font-bold mb-4">Backend Development & CMS</h3>
-              <p className="text-white/60 mb-4">
-                I create robust server-side applications and manage content efficiently.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">PHP</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Laravel</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">SQL</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">WordPress</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Shopify</Badge>
-              </div>
-              {/* <p className="text-white/60 mt-4">Certifications: Certified Laravel Developer, Shopify Partner</p> */}
-            </div>
-            {/* Web Design & Additional Skills */}
-            <div className="p-8 rounded-xl border border-mint/10 bg-forest hover:border-mint/30 transition-colors">
-              <img src="/icons/additional-skills-icon.svg" alt="Web Design Icon" className="w-12 h-12 mb-6" />
-              <h3 className="text-xl font-bold mb-4">Web Design & Additional Skills</h3>
-              <p className="text-white/60 mb-4">
-                I enhance user engagement and brand presence through UI/UX design and digital marketing.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Figma</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">FlutterFlow</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">TypeScript</Badge>
-                <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Tailwind</Badge>
               </div>
             </div>
           </div>
@@ -179,14 +171,17 @@ const Index = () => {
             Let's work together to bring your vision to life with cutting-edge technology and professional expertise.
             As a top-rated Upwork freelancer, I deliver exceptional development skills and digital marketing expertise.
           </p>
-          <Button onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg">
+          <Button 
+            onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} 
+            className="bg-mint hover:bg-mint/90 text-forest font-medium px-8 py-6 text-lg"
+          >
             Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </section>
 
       <Footer />
-    </main>
+    </div>
   );
 };
 
