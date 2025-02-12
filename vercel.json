@@ -1,8 +1,7 @@
 {
   "version": 2,
   "framework": "vite",
-  "buildCommand": "npm install && npm run build",
-  "installCommand": "npm install --include=dev",
+  "buildCommand": "npm run fix-install && npm run build",
   "outputDirectory": "dist",
   "env": {
     "NODE_ENV": "production"
@@ -10,9 +9,9 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
+      "use": "@vercel/static-build",
       "config": {
-        "buildCommand": "npm run fix-install && npm run build"
+        "distDir": "dist"
       }
     }
   ]
