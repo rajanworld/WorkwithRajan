@@ -27,7 +27,7 @@ export async function POST(req: Request) {
       const data = await resend.emails.send({
         from: 'onboarding@resend.dev', // Use this exact address for testing
         to: process.env.CONTACT_EMAIL,
-        reply_to: email,
+        replyTo: email,
         subject: `Contact Form: ${name}`,
         html: `
           <h2>New Contact Form Message</h2>
