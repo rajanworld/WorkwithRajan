@@ -41,8 +41,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ 
         success: true, 
         message: 'Email sent successfully'
-      });
-
+      }); 
+ 
     } catch (sendError: any) {
       console.error('Resend API Error:', sendError);
       return NextResponse.json(
