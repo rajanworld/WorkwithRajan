@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "installCommand": "npm install --force",
+  "buildCommand": "npm run vercel-build",
+  "installCommand": "npm install --omit=optional",
   "framework": "vite",
   "outputDirectory": "dist",
   "builds": [

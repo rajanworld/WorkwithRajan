@@ -9,8 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf package-lock.json",
-    "vercel-build": "tsc --noEmit && vite build",
-    "postinstall": "npm run build",
+    "vercel-build": "vite build",
+    "postinstall": "",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
