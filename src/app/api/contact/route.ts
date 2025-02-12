@@ -38,15 +38,10 @@ export async function POST(req: Request) {
         `,
       });
 
-      if (data.id) {
-        return NextResponse.json({ 
-          success: true, 
-          message: 'Email sent successfully',
-          id: data.id 
-        });
-      } else {
-        throw new Error('Failed to send email');
-      }
+      return NextResponse.json({ 
+        success: true, 
+        message: 'Email sent successfully'
+      });
 
     } catch (sendError: any) {
       console.error('Resend API Error:', sendError);
