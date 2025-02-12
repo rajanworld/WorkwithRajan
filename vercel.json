@@ -1,8 +1,8 @@
 {
   "version": 2,
   "framework": "vite",
-  "buildCommand": "npm install && NODE_ENV=production npm run vercel-build",
-  "installCommand": "npm install",
+  "buildCommand": "npm install && npm run build",
+  "installCommand": "npm install --include=dev",
   "outputDirectory": "dist",
   "env": {
     "NODE_ENV": "production"
