@@ -8,7 +8,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf node_modules && rm -rf .next && rm -rf package-lock.json",
+    "vercel-build": "npm run clean && npm install && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
