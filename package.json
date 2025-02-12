@@ -9,8 +9,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf package-lock.json",
-    "vercel-build": "npm install --force && vite build",
-    "postinstall": "npm run build"
+    "vercel-build": "tsc --noEmit && vite build",
+    "postinstall": "npm run build",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

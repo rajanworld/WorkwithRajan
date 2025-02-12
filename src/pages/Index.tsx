@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Briefcase, Users, Star, GraduationCap, Languages } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import ContactForm from "@/components/ContactForm";
 import { AIIcon, ChatbotIcon, IntegrationIcon } from "@/components/icons";

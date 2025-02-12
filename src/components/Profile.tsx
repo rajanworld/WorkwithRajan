@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import type { FC } from 'react';
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, MapPin, Star, Award, Languages, Briefcase, GraduationCap, Code } from "lucide-react";
+import { Clock, MapPin, Award, Languages, Briefcase, GraduationCap, Code } from "lucide-react";
 
-const Profile = () => {
+const Profile: FC = () => {
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
 
   useEffect(() => {
