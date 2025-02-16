@@ -16,20 +16,28 @@ const Hero: React.FC = () => {
         <span className="text-mint text-sm font-medium">Full Stack Developer & AI Specialist</span>
       </div>
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white" role="heading">
-        Web Development & AI Solutions for Modern Businesses
+        Custom Web Development & AI Solutions for Your Business
       </h1>
       <p className="text-base sm:text-lg text-white/80 max-w-md">
         From custom web applications to AI automation, I deliver end-to-end solutions. Expertise in full-stack development, AI integration, SEO optimization, and digital marketing to help your business thrive.
       </p>
       <div className="flex flex-wrap gap-4">
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">AI Automation</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">AI Agents</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Chatbots</Badge>
         <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">React</Badge>
         <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">PHP</Badge>
         <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Node.js</Badge>
         <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">HTML/CSS</Badge>
         <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Tailwindcss</Badge>
-        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">AI Automation</Badge>
-        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">SEO</Badge>
         <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">TypeScript</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Next.js</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">MongoDB</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">MySQL</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">Docker</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">AWS</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">CI/CD</Badge>
+        <Badge variant="secondary" className="bg-mint/10 text-mint border-mint/20">SEO</Badge>
       </div>
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <Button  
