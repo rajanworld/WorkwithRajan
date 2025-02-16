@@ -56,20 +56,33 @@ const ContactForm = () => {
   const [selectedCategory, setSelectedCategory] = useState(serviceCategories[0].title);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+      e.preventDefault();
+      setIsSubmitting(true);
 
-    try {
-      console.log({ email, serviceType, task });
-      setEmail('');
-      setServiceType('');
-      setTask('');
-      alert("Thanks for reaching out! I'll get back to you soon.");
-    } catch (error) {
-      alert('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
+      try {
+          const response = await fetch('https://script.google.com/macros/s/AKfycbx9uqpwQuXVih0YStD0eShEAYWiXB9HhK9yk3vS8MtSqZvRD6Nq5lyo2BB_Pbeu2r7J/exec', {
+              method: 'POST',
+              body: JSON.stringify({ email, serviceType, task }),
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+          });
+
+          const result = await response.json();
+          if (result.status === 'success') {
+              setEmail('');
+              setServiceType('');
+              setTask('');
+              alert("Thanks for reaching out! I'll get back to you soon.");
+          } else {
+              throw new Error('Submission failed');
+          }
+      } catch (error) {
+          console.error('Error submitting form:', error);
+          alert(`Something went wrong. Please try again. Error: ${error.message}`);
+      } finally {
+          setIsSubmitting(false);
+      }
   };
 
   return (
