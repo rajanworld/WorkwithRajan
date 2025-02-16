@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from 'react';
 
 const ContactForm = () => {
   const [email, setEmail] = useState('');
@@ -56,34 +55,48 @@ const ContactForm = () => {
   const [selectedCategory, setSelectedCategory] = useState(serviceCategories[0].title);
 
   const handleSubmit = async (e: React.FormEvent) => {
-      e.preventDefault();
-      setIsSubmitting(true);
-
+    e.preventDefault();
+    setIsSubmitting(true);
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbx9uqpwQuXVih0YStD0eShEAYWiXB9HhK9yk3vS8MtSqZvRD6Nq5lyo2BB_Pbeu2r7J/exec', {
+        method: 'POST',
+        mode: 'no-cors', 
+        body: JSON.stringify({ email, serviceType, task }),
+        headers: {
+          'Content-Type': 'text/plain' // Using text/plain to avoid preflight OPTIONS
+        },
+      });
+  
+      // Get the raw response text
+      const text = await response.text();
+      // Trim and parse manually
+      let result;
       try {
-          const response = await fetch('https://script.google.com/macros/s/AKfycbx9uqpwQuXVih0YStD0eShEAYWiXB9HhK9yk3vS8MtSqZvRD6Nq5lyo2BB_Pbeu2r7J/exec', {
-              method: 'POST',
-              body: JSON.stringify({ email, serviceType, task }),
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-          });
-
-          const result = await response.json();
-          if (result.status === 'success') {
-              setEmail('');
-              setServiceType('');
-              setTask('');
-              alert("Thanks for reaching out! I'll get back to you soon.");
-          } else {
-              throw new Error('Submission failed');
-          }
-      } catch (error) {
-          console.error('Error submitting form:', error);
-          alert(`Something went wrong. Please try again. Error: ${error.message}`);
-      } finally {
-          setIsSubmitting(false);
+        result = JSON.parse(text.trim());
+      } catch (err) {
+        console.error('Error parsing JSON:', err, 'Response text:', text);
+        throw new Error('Failed to parse JSON response');
       }
+  
+      if (result.status === 'success') {
+        setEmail('');
+        setServiceType('');
+        setTask('');
+        alert("Thanks for reaching out! I'll get back to you soon.");
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      setEmail('');
+      setServiceType('');
+      setTask('');
+      alert(`Thanks for reaching out! I'll get back to you soon.`);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+  
 
   return (
     <div className="space-y-4 mt-4">
