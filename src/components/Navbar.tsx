@@ -21,6 +21,12 @@ const Navbar = () => {
           <Link to="#contact" className="text-white/90 hover:text-white transition-colors">
             Contact
           </Link> */}
+          {/* <Link to="/blog" className="text-white/90 hover:text-white transition-colors">
+            Blog
+          </Link>
+          <Link to="/digital-guide-2025" className="text-white/90 hover:text-white transition-colors">
+            Digital Guide 2025
+          </Link> */}
         </div>
         <Button 
           onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} 

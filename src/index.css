@@ -45,3 +45,102 @@
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(100, 255, 218, 0.1);
 }
+
+.custom-css {
+  ul {
+    @apply list-disc pl-5 mt-5 mb-5;
+    list-style-position: inside;
+  }
+
+  ul ul{
+    @apply mt-2 mb-2;
+  }
+
+  ol {
+    @apply list-decimal pl-5;
+    list-style-position: inside;
+  }
+
+  li {
+    @apply mb-2;
+    position: relative;
+    padding-left: 1.5em;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed;
+    line-height: 1.75;
+    color: var(--foreground);
+  }
+
+  h1 {
+    @apply text-5xl font-bold mt-2 mb-4;
+    background: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(12 35 50));
+    padding: 0.5em;
+    border-radius: var(--radius);
+  }
+
+  h2 {
+    @apply text-4xl font-bold mt-2 mb-4;
+    background: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(12 35 50));
+    padding: 0.5em;
+    border-radius: var(--radius);
+  }
+
+  h3 {
+    @apply text-3xl font-bold mt-2 mb-4;
+  }
+
+  h4 {
+    @apply text-xl font-bold mt-2 mb-4;
+  }
+
+  h5 {
+    @apply text-lg font-bold mt-2 mb-4;
+  }
+
+  h6 {
+    @apply text-base font-bold mt-2 mb-4;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic;
+  }
+
+  pre {
+    @apply bg-gray-100 p-4 rounded;
+  }
+
+  code {
+    @apply bg-gray-100 px-1 rounded;
+  }
+
+  table {
+    @apply w-full border-collapse mb-10;
+  }
+
+  th, td {
+    @apply border px-4 py-2;
+  }
+
+  nav a {
+    background: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(12 35 50));
+  }
+
+  nav a:hover {
+    background: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(12 35 50));
+  }
+
+  nav a.active {
+    background: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(12 35 50));
+  }
+
+  hr, .Separator {
+    @apply border-t-2 border-gray-300 my-8;
+  }
+
+  .bg_cstm {
+    background: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(89 123 145)) !important;
+  }
+  
+}
