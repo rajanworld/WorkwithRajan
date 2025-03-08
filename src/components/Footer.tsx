@@ -1,8 +1,40 @@
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
+
+  useEffect(() => {
+    // Create container
+    const container = document.createElement("div");
+    container.id = "autoindex-chat-widget-container";
+    document.body.appendChild(container);
+    
+    // Create and configure script
+    const script = document.createElement("script");
+    script.src = "https://ai.kapcho.com/widget/embed.js";
+    script.async = true;
+    script.defer = true;
+    script.setAttribute("data-widget-id", "widget_user_2u355");
+    script.setAttribute("data-theme", "light");
+    script.setAttribute("data-position", "right");
+    script.setAttribute("data-button-color", "#3B82F6");
+    script.setAttribute("data-button-icon", "chat");
+    script.setAttribute("data-welcome-message", "Hello! Ask me anything about the documents.");
+    script.setAttribute("data-width", "380px");
+    script.setAttribute("data-height", "600px");
+    
+    document.body.appendChild(script);
+    
+    // Cleanup function
+    return () => {
+      if (document.body.contains(script)) document.body.removeChild(script);
+      if (document.body.contains(container)) document.body.removeChild(container);
+    };
+  }, []);
+
   return (
+    <>
     <footer className="bg-forest-light border-t border-mint/10">
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
@@ -43,6 +75,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
