@@ -5,12 +5,10 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const Footer = () => {
 
   useEffect(() => {
-    // Create container
     const container = document.createElement("div");
     container.id = "autoindex-chat-widget-container";
     document.body.appendChild(container);
     
-    // Create and configure script
     const script = document.createElement("script");
     script.src = "https://ai.kapcho.com/widget/embed.js";
     script.async = true;
@@ -23,6 +21,8 @@ const Footer = () => {
     script.setAttribute("data-welcome-message", "Hello! Ask me anything about the documents.");
     script.setAttribute("data-width", "380px");
     script.setAttribute("data-height", "600px");
+    script.setAttribute("data-api-base-url", "https://ai.kapcho.com");
+    script.setAttribute("data-debug", "true");
     
     document.body.appendChild(script);
     
