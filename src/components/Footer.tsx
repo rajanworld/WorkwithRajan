@@ -15,7 +15,7 @@ const Footer = () => {
     script.src = "https://ai.kapcho.com/widget/embed.js";
     script.async = true;
     script.defer = true;
-    script.setAttribute("data-widget-id", "wid_user_c5311001");
+    script.setAttribute("data-widget-id", "wid_user_388df3b8");
     script.setAttribute("data-theme", "light");
     script.setAttribute("data-position", "right");
     script.setAttribute("data-button-color", "#64ffda");
