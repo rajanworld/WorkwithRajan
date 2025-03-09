@@ -7,6 +7,7 @@ const Footer = () => {
     const script = document.createElement('script');
     script.src = 'https://ai.kapcho.com/widget/embed.js';
     script.setAttribute('data-widget-id', 'wid_user_e7f46f0d');
+    script.setAttribute('data-api-base-url', 'https://ai.kapcho.com');
     script.async = true;
     document.body.appendChild(script);
     
