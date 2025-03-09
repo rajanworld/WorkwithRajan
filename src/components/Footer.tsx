@@ -3,19 +3,38 @@ import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
+
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://ai.kapcho.com/widget/embed.js';
-    script.setAttribute('data-widget-id', 'wid_user_e7f46f0d');
-    script.setAttribute('data-api-base-url', 'https://ai.kapcho.com');
+    // Create container div
+    const container = document.createElement("div");
+    container.id = "autoindex-chat-widget-container";
+    document.body.appendChild(container);
+    
+    // Create script element
+    const script = document.createElement("script");
+    script.src = "https://ai.kapcho.com/widget/embed.js";
     script.async = true;
+    script.defer = true;
+    script.setAttribute("data-widget-id", "wid_user_2cb8d7ac");
+    script.setAttribute("data-theme", "light");
+    script.setAttribute("data-position", "right");
+    script.setAttribute("data-button-color", "#64ffda");
+    script.setAttribute("data-button-icon", "chat");
+    script.setAttribute("data-welcome-message", "Hello! Ask me anything about the documents.");
+    script.setAttribute("data-width", "380px");
+    script.setAttribute("data-height", "600px");
+    script.setAttribute("data-api-base-url", "https://ai.kapcho.com");
+    script.setAttribute("data-debug", "false");
+    
     document.body.appendChild(script);
     
+    // Cleanup function to remove script when component unmounts
     return () => {
-      document.body.removeChild(script);
+      if (container) document.body.removeChild(container);
+      if (script) document.body.removeChild(script);
     };
   }, []);
-
+  
   return (
     <>
     <footer className="bg-forest-light border-t border-mint/10">
