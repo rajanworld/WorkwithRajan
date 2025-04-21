@@ -42,7 +42,7 @@ const Index = () => {
         <div className="container mx-auto text-center max-w-3xl">
           <h2 className="text-4xl font-bold mb-6">Transform Your Ideas into Reality</h2>
             <p className="text-white/80 mb-8">
-            With 11+ years of expertise in full-stack development and AI automation, 
+            With 13+ years of expertise in full-stack development and AI automation, 
             I transform businesses through innovative tech solutions. From custom web applications 
             to intelligent automation systems, I'll help turn your vision into reality with 
             scalable, future-ready solutions that drive results.
