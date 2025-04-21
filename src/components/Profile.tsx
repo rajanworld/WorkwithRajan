@@ -49,7 +49,7 @@ const Profile: FC = () => {
                 <span className="text-mint font-semibold">$30.00/hr</span>
               </div>
               <p className="text-white/80">
-                Hi, I'm Rajan, a Full Stack Developer and AI Automation Specialist. I started my coding journey at 16 and have accumulated over 11 years of experience. I have completed more than 200 projects and have expertise in technologies like React.js, Node.js, PHP, MySQL, MongoDB, WordPress, Shopify, Express, and AI automation solutions.
+                Hi, I'm Rajan, a Full Stack Developer and AI Automation Specialist. I started my coding journey at 15 and have accumulated over 13 years of experience. I have completed more than 200 projects and have expertise in technologies like React.js, Node.js, PHP, MySQL, MongoDB, WordPress, Shopify, Express, and AI automation solutions.
               </p>
               <Button onClick={() => window.open("https://calendly.com/kapcho99/30min", "_blank")} 
                 className="w-full bg-mint hover:bg-mint/90 text-forest font-medium">
